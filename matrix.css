@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    margin-left: 2%;
+    text-shadow: 2px 2px 4px lightgreen;
+}
+hr{
+    width: 10%;
+    margin: 10px auto;
+    border: dotted 8px grey;
+    border-bottom: 0;
+}
+.nav{
+    margin-top: 25px;
+    margin-left: 1.5%;
+    width: 98%;
+}
+.nav-head{
+    font-size: 2.5em;
+    float: left;
+    margin-left: 45px;
+    text-shadow: 3px 3px 4px lightgreen;
+}
+.nav ul{
+    list-style: none;
+    margin-left: 65%;
+}
+.nav ul li a{
+    font-size: 1.2em;
+    display: flex;
+    color: white;
+    text-shadow: 2px 2px 4px lightgreen;
+    float: left;
+    text-decoration: none;
+    margin-left: 2em;
+    margin-top: 1.4%;
+    padding: 3px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.main-cont a{
+    text-decoration: none;
+}
+.main-p{
+    margin-top: 70px;
+    text-align: center;
+    width: 80%;
+    margin-left: 9%;
+    font-size: 1.5em;
+}
+.main-cont{
+    margin-top: 40px;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sub-cont{
+    border: solid 1px white;
+    width: 300px;
+    color: black;
+    height: 300px;
+    margin-left: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(math.png);
+    background-position: center;
+    border-radius: 5%;
+    transition: transform 0.1s ease;
+}
+.sub-cont:hover {
+    transform: scaleX(1.05) scaleY(1.05);
+    box-shadow: 0 0 15px lightgreen;
+  }
+.sub-cont p{
+    color: white;
+    text-shadow: 2px 2px 4px lightgreen;
+    text-align: center;
+    margin-top: 35%;
+    font-size: 2.5em;
+    width: 300px;
+}
+.selection{
+    font-size: 32px;
+    margin-top: 10px;
+    text-align: center;
+}
+select{
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    height: 20%;
+    margin-left: 45%;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px 4px lightgreen;
+    font-size: larger;
+    border: solid 2px lightgreen;
+}
+.third span{
+    font-size: 0.8em;
+}
+.nav ul li a:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.09);
+    box-shadow: 0 0 5px lightgreen;
+}
+.main-p {
+    text-shadow: 2px 2px 4px lightgreen;
+}
+h2{
+    margin-top: 2%; 
+    text-align: center;
+    font-size: 2em;
+}
+input{
+    width: 3em;
+    height: 3em;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px 4px lightgreen;
+    border: solid 1px lightgreen;
+    box-shadow: 2px 2px 4px lightgreen;
+    font-size: 20px;
+    text-align: center;
+}
+.matrix-2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 18%;
+    margin-top: 2%;
+}
+.matrix-3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+.matrix-4{
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 1%; */
+    margin-top: 2%;
+}
+.mat-a,.mat-b,.mat-ans{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+div.mat-a p,div.mat-b p,div.mat-ans p{
+    font-size: larger;
+    text-align: center;
+}
+div.mat-ans p{
+    margin-left: 10%;
+}
+button{
+    font-size: large;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px lightgreen;
+    background-color: black;
+    border: solid 1px lightgreen;
+    box-shadow: 2px 2px 4px lightgreen;
+}
+.but-cal{
+    font-size: 1.5em;
+    margin-right: 10px;
+    width: 10%;
+    height: 10%;
+}
+.but-cal:hover{
+    background-color: lightgreen;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+}
+.buts2,.buts3,.buts4{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    display: none;
+}
+.matrix-2,.matrix-3,.matrix-4{
+    display: none;
+}
+
