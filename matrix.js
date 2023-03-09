@@ -80,11 +80,11 @@ function cal2(num){
         var r22=(a21*b12)+(a22*b22);
     }
     else if (num===4){
-        document.getElementById("r11-4").value=''
-        document.getElementById("r12-4").value=''
-        document.getElementById("r21-4").value=''
-        document.getElementById("r22-4").value=''
-
+        document.getElementById("r11-2").value=''
+        document.getElementById("r12-2").value=''
+        document.getElementById("r21-2").value=''
+        document.getElementById("r22-2").value=''
+        return
     }
     else if (num===5){
         var r11 = a11*a11 + a12*a21;
@@ -131,10 +131,13 @@ function cal2(num){
         document.getElementById("b22-2").value=''
         return
     }
+    else if (num===10){
+        
     document.getElementById("r11-2").value=r11;
     document.getElementById("r12-2").value=r12;
     document.getElementById("r21-2").value=r21;
     document.getElementById("r22-2").value=r22;
+}
 }
 function cal3(num){
     var a11=parseInt(document.getElementById("a11-3").value);
@@ -189,15 +192,16 @@ function cal3(num){
         var r33 = a31*b13 + a32*b23 + a33*b33;
     }
     else if (num===4){
-        document.getElementById("r11-4").value=''
-        document.getElementById("r12-4").value=''
-        document.getElementById("r13-4").value=''
-        document.getElementById("r21-4").value=''
-        document.getElementById("r22-4").value=''
-        document.getElementById("r23-4").value=''
-        document.getElementById("r31-4").value=''
-        document.getElementById("r32-4").value=''
-        document.getElementById("r33-4").value=''
+        document.getElementById("r11-3").value=''
+        document.getElementById("r12-3").value=''
+        document.getElementById("r13-3").value=''
+        document.getElementById("r21-3").value=''
+        document.getElementById("r22-3").value=''
+        document.getElementById("r23-3").value=''
+        document.getElementById("r31-3").value=''
+        document.getElementById("r32-3").value=''
+        document.getElementById("r33-3").value=''
+        return
     }
     else if(num===5){
         var r11 = a11*a11 + a12*a21 + a13*a31;
@@ -284,6 +288,25 @@ function cal3(num){
         document.getElementById("b32-3").value=''
         document.getElementById("b33-3").value=''
         return
+    }
+    else if (num===10){
+        // Define the matrix A
+var A = [[a11, a12, a13], [a21, a22, a23], [a31, a32, a33]];
+
+// Calculate the inverse of A
+var A_inv = numeric.inv(A);
+
+// Update the result matrix
+document.getElementById("r11-3").value = A_inv[0][0];
+document.getElementById("r12-3").value = A_inv[0][1];
+document.getElementById("r13-3").value = A_inv[0][2];
+document.getElementById("r21-3").value = A_inv[1][0];
+document.getElementById("r22-3").value = A_inv[1][1];
+document.getElementById("r23-3").value = A_inv[1][2];
+document.getElementById("r31-3").value = A_inv[2][0];
+document.getElementById("r32-3").value = A_inv[2][1];
+document.getElementById("r33-3").value = A_inv[2][2];
+
     }
     document.getElementById("r11-3").value=r11;
     document.getElementById("r12-3").value=r12;
@@ -544,6 +567,9 @@ function cal4(num){
         document.getElementById("b43-4").value=''
         document.getElementById("b44-4").value=''
         return
+    }
+    else if (num===10){
+        
     }
     document.getElementById("r11-4").value=r11;
     document.getElementById("r12-4").value=r12;
