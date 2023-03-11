@@ -133,11 +133,11 @@ function cal2(num){
     }
     else if (num===10){
         
+    }
     document.getElementById("r11-2").value=r11;
     document.getElementById("r12-2").value=r12;
     document.getElementById("r21-2").value=r21;
     document.getElementById("r22-2").value=r22;
-}
 }
 function cal3(num){
     var a11=parseInt(document.getElementById("a11-3").value);
@@ -292,8 +292,6 @@ function cal3(num){
     else if (num===10){
         // Define the matrix A
 var A = [[a11, a12, a13], [a21, a22, a23], [a31, a32, a33]];
-
-// Calculate the inverse of A
 var A_inv = numeric.inv(A);
 
 // Update the result matrix
